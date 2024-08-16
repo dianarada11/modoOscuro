@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <script>
+        
+        function CambiarModoColor(){
+            document.body.classList.toggle('dark-mode')
+        }        
+    </script>
+
+
+    <div class="container">
+        <div class="targeta"  >
+            <h1>Registro</h1>
+            <label for=""> Nombre </label>
+            <input class="label" type="text" id="nomnre" name="nombre" required>
+    
+            <label for=""> Apellido </label>
+            <input type="text" id="apellido" name="apellido" required>
+    
+            <label for=""> Nombre De Usuario </label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for=""> Email </label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for=""> Contraseña </label>
+            <input type="password" name="password" required>
+    
+            <label for=""> 
+                <input type="checkbox" id="terms" name="terms" required>
+                Acepto los terminos, condiciones y politicas.
+            </label>
+          
+            <button class="button1" onclick="mostrarDatos()"> Enter </button>
+            <div id="titulo">Modo Oscuro</div>
+            <button class="boton" onclick="CambiarModoColor()"> Activar Modo Oscuro </button>
+        </div>
+
+
+
+      
+    </div>
+
+
+    
+
+ 
+</body>
+</html> 
